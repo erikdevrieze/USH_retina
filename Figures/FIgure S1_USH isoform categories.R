@@ -23,18 +23,8 @@ setwd("/Users/erikdevrieze/Library/CloudStorage/OneDrive-Radboudumc/z918116/UMCN
 #Read full data excel file containing read assignments from all 4 runs. 
 s1_4_sorted_gene_assignments <- fread("dataset 1_CCS3/isoquant/00_aln.sorted.read_assignments.tsv") 
 
-
 # change col name to "run"
-colnames(s1_4_sorted_gene_assignments)[1] ="run"
-
-
-#Filter for :	 m64037e
-
-#s4_sorted_gene_assignments <- cSplit(s1_4_sorted_gene_assignments, "run", "/", direction = "wide")
-#colnames(s4_sorted_gene_assignments)
-
-#s4_sorted_gene_assignments  <- s4_sorted_gene_assignments %>% dplyr::filter(run_1 =="m64037e_211216_160915")
-                                                                                                 
+colnames(s1_4_sorted_gene_assignments)[1] ="run"                                                                                               
                                                                                                  
 # filter for target genes (featureID)
 USHs1_4_sorted_gene_assignments <- s1_4_sorted_gene_assignments %>% dplyr::filter(gene_id %in% c("ENSG00000137474.23", "ENSG00000006611.17", "ENSG00000107736.22", 
@@ -43,7 +33,6 @@ USHs1_4_sorted_gene_assignments <- s1_4_sorted_gene_assignments %>% dplyr::filte
                                                                                               "ENSG00000163646.12", "ENSG00000141337.13"))  
 
 #save the file as backup (the original read assignment file is too large).
-
 USHs1_4_sorted_gene_assignments <- read_xlsx("dataset 1_CCS3/USHs1_4_sorted_gene_assignments.xlsx") 
 write.xlsx(USHs1_4_sorted_gene_assignments, "USHs1_4_sorted_gene_assignments.xlsx")
 
@@ -63,19 +52,8 @@ USHs1_4_sorted_gene_assignments$gene_id[USHs1_4_sorted_gene_assignments$gene_id=
 USHs1_4_sorted_gene_assignments$gene_id[USHs1_4_sorted_gene_assignments$gene_id=="ENSG00000141337.13"]<-"11_ARSG"
 
 
-
-
-#write_csv(USHs1_4_sorted_gene_assignments, "USHs1_4_sorted_gene_assignments.csv")
-#read pre-sorted USH dataset:
-#USHs1_4_sorted_gene_assignments <- read_excel("dataset 1_CCS3/USHs1_4_sorted_gene_assignments.xlsx") 
-
-
 #splice colum with to filter for structural categories and runs
-
-#s1_4.df.split1 <- cSplit(USHs1_4_sorted_gene_assignments, "additional_info", ";", direction = "wide")
-
 s1_4.df.split2 <- cSplit(USHs1_4_sorted_gene_assignments, "structural_cat", "=", direction = "wide")
-colnames(s1_4.df.split2)[1] ="run"
 s1_4.df.split3 <- cSplit(s1_4.df.split2, "run", "/", direction = "wide")
 
 
