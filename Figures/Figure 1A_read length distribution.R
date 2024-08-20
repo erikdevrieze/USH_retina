@@ -5,14 +5,15 @@ library(xlsx)
 library(readr)
 
 
-
-
 #Set your working directory
 setwd("/.../Analysis paper 2024/ccs_read_length")
 
 
 ###################################################################################################################
 
+#files with the read lengths (CCS3) extracted from the mapped sequencing data are uploaded in the Data folder
+
+###################################################################################################################
 
 #Sample 1 (human retina regular library prep #1)
 #Read distribution in 500nt bins
