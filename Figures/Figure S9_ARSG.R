@@ -1,24 +1,15 @@
-install.packages("tidyverse")
-install.packages("reshape2")
-install.packages("rtracklayer")
-BiocManager::install("rtracklayer")
-install_github("pjvolders/PJsTools")
-BiocManager::install("Gviz")
-install.packages("svglite")
-install.packages("rJava")
+
 
 #Load packages(ev"dplyr"#Load packages(every time)
-library(dplyr) #for data manipulation (organisation, grouping, counting, etc)
-library(ggplot2) #for plots
-library(readxl) #read excel files
-library(reshape2) #reshape dataframes (long to wide format)
+library(dplyr)
+library(ggplot2)
+library(readxl) 
+library(reshape2)
 library(ggtranscript)
 library(magrittr)
 library(rtracklayer)
 library(xlsx) 
 
-
-setwd("/Users/erikdevrieze/Library/CloudStorage/OneDrive-Radboudumc/z918116/UMCN/Manuscripts/2024 - USH isoseq manuscript/Analysis paper 2024")
 
 
 #####  Visualize from data GTF  #################
