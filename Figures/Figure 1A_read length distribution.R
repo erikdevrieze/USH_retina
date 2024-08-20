@@ -11,7 +11,11 @@ setwd("/.../Analysis paper 2024/ccs_read_length")
 
 ###################################################################################################################
 
-#files with the read lengths (CCS3) extracted from the mapped sequencing data are uploaded in the Data folder
+#files with the read lengths (CCS3) extracted from the mapped sequencing data are uploaded to Galaxy:
+#https://usegalaxy.org/api/datasets/f9cad7b01a47213594de9d1831d703a2/display?to_ext=tabular
+#https://usegalaxy.org/api/datasets/f9cad7b01a47213504a8724179d7c40d/display?to_ext=tabular
+#https://usegalaxy.org/api/datasets/f9cad7b01a4721352b6f98a1097595da/display?to_ext=tabular
+#https://usegalaxy.org/api/datasets/f9cad7b01a47213558c73ab11d944db9/display?to_ext=tabular
 
 ###################################################################################################################
 
