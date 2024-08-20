@@ -8,19 +8,12 @@ library(data.table)
 library(splitstackshape)
 library(ggplot2)
 
-
-#Set your working directory
-setwd("/Users/erikdevrieze/Library/CloudStorage/OneDrive-Radboudumc/z918116/UMCN/Manuscripts/2024 - USH isoseq manuscript/Analysis paper 2024")
-
-
-
-
 ###################################################################################################################
 # quantification done from isoquant read assignment file containg all 4 samples. 
 # script was also done on file for samples 1-3 confirming that results are the same between files. 
 ###################################################################################################################
 
-#Read full data excel file containing read assignments from all 4 runs. 
+#Read full data file containing read assignments from all 4 runs. 
 s1_4_sorted_gene_assignments <- fread("dataset 1_CCS3/isoquant/00_aln.sorted.read_assignments.tsv") 
 
 # change col name to "run"
