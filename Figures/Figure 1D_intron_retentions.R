@@ -10,14 +10,8 @@ library(data.table)
 library(splitstackshape)
 
 
-#See which working directory (wd) is used atm
-getwd()
-#Set your working directory
-setwd("/Users/erikdevrieze/Library/CloudStorage/OneDrive-Radboudumc/z918116/UMCN/Manuscripts/2024 - USH isoseq manuscript/Analysis paper 2024")
-
-
 ###################################################################################################################
-# using read assignment data from IsoQuant 
+# using sorted read assignment files from IsoQuant 
 ###################################################################################################################
 
 
