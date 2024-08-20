@@ -32,9 +32,10 @@ USHs1_4_sorted_gene_assignments <- s1_4_sorted_gene_assignments %>% dplyr::filte
                                                                                               "ENSG00000042781.14", "ENSG00000164199.18", "ENSG00000095397.16", 
                                                                                               "ENSG00000163646.12", "ENSG00000141337.13"))  
 
-#save the file as backup (the original read assignment file is too large).
-USHs1_4_sorted_gene_assignments <- read_xlsx("dataset 1_CCS3/USHs1_4_sorted_gene_assignments.xlsx") 
+#save the file as backup (the original read assignment file is too large). File is uploaded in Data folder
 write.xlsx(USHs1_4_sorted_gene_assignments, "USHs1_4_sorted_gene_assignments.xlsx")
+USHs1_4_sorted_gene_assignments <- read_xlsx("dataset 1_CCS3/USHs1_4_sorted_gene_assignments.xlsx") 
+
 
 
 #rename ENSG codes to gene name (number by USH subtype)
