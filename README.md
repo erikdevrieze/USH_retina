@@ -6,3 +6,5 @@ This repository contains the scripts used for the paper "The landscape of Usher 
 # Data
 
 Raw PacBio Iso-Seq data are available at the European Genome-phenome Archive (EGA) under accession number EGAD50000000101. 
+Transcripts are visualized in a genome browser track as part of genome-wide analysis described in Riepe et al. 
+https://genome-euro.ucsc.edu/s/tabeariepe/retina_atlas
