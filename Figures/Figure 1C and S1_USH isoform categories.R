@@ -10,7 +10,8 @@ library(ggplot2)
 
 ###################################################################################################################
 # quantification done from isoquant read assignment file containg all 4 samples. 
-# script was also done on file for samples 1-3 confirming that results are the same between files. 
+# script was also used on the file produced by isoquant with input from samples 1-3 only,
+# to confirm that results are the same between files. 
 ###################################################################################################################
 
 #Read full data file containing read assignments from all 4 runs. 
