@@ -164,3 +164,5 @@ ggsave("structural_category_counts_sample4.pdf", width = 24, height = 24, units 
 
 #final annotations in figures were done manually in Adobe Illustrator
 
+#to obtain read transcript read counts for figure 1C, the sum of FSM, ISM, NIC and NNIC was calculated. Reads assigned genic were excluded from this plot. 
+
