@@ -1,16 +1,10 @@
 
-#Load packages(every time)
-library(dplyr) #for data manipulation (organisation, grouping, counting, etc)
-library(readxl) #read excel files
+#Load packages
+library(dplyr) 
+library(readxl) 
 library(readr)
 library(data.table)
 library(splitstackshape)
-
-
-#See which working directory (wd) is used atm
-getwd()
-#Set your working directory
-setwd("/Users/erikdevrieze/Library/CloudStorage/OneDrive-Radboudumc/z918116/UMCN/Manuscripts/2024 - USH isoseq manuscript/Analysis paper 2024")
 
 
 ###################################################################################################################
