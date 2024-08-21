@@ -10,7 +10,7 @@ library(rtracklayer)
 library(xlsx) 
 
 
-setwd("/Users/erikdevrieze/Library/CloudStorage/OneDrive-Radboudumc/z918116/UMCN/Manuscripts/2024 - USH isoseq manuscript/Analysis paper 2024/")
+setwd("//")
 
 
 #####  Visualize from data GTF  #################
