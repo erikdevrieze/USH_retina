@@ -83,7 +83,7 @@ refseq_msHC[99,4] = 635
 
 
 # combine df_columns for figure
-MYO7A_fig_full <- bind_rows(refseq_gencode_clean, refseq_gilmore, refseq_msHC, MYO7A_CCS3 )  # note that there is no MYO7A isoform pedicted by Isoquant when input is only the s4 CCS0 dataset
+MYO7A_fig_full <- bind_rows(refseq_gencode_clean, refseq_gilmore, refseq_msHC, MYO7A_CCS3 ) 
 
 
 # extract the required annotation columns 
